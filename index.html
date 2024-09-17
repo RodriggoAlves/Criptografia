@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia e Descriptografia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Criptografia e Descriptografia</h1>
+
+       
+        <div class="entry-group">
+            <input type="text" id="inputEncryptText" placeholder="Digite o texto para criptografar">
+            <button onclick="encryptText()">Criptografar</button>
+        </div>
+
+        
+        <div class="entry-group">
+            <input type="text" id="inputDecryptText" placeholder="Digite o texto para descriptografar">
+            <button onclick="decryptText()">Descriptografar</button>
+        </div>
+    </div>
+
+   
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalText"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
